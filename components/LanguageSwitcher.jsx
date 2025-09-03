@@ -32,7 +32,6 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center space-x-2 text-white hover:text-blue-400 transition-colors px-3 py-2 rounded-lg hover:bg-gray-800/50"
       >
-        <Globe className="w-4 h-4" />
         <span className="text-sm font-medium">
           {currentLanguage?.flag} {currentLanguage?.name}
         </span>
