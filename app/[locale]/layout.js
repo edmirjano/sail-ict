@@ -11,6 +11,9 @@ const locales = ['en', 'sq', 'it'];
 export const metadata = {
   title: 'Sail-ICT - Navigating Innovation, Engineering the Future',
   description: 'We specialize in creating advanced software solutions, complete IT systems, and industrial automation to empower your business.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default async function LocaleLayout({ children, params }) {
