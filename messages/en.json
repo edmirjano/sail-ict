@@ -1,0 +1,41 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "cta": "Contact Us"
+  },
+  "Hero": {
+    "tagline": "NAVIGATING INNOVATION, ENGINEERING THE FUTURE",
+    "headline": "Navigating Innovation, Engineering the Future",
+    "subheading": "We specialize in creating advanced software solutions, complete IT systems, and industrial automation to empower your business.",
+    "cta": "Discover More"
+  },
+  "Services": {
+    "title": "Our Services",
+    "service1_title": "Software Development & IT Systems",
+    "service1_desc": "Conception, creation, and implementation of software applications, platforms, and complete IT systems, including AI-based solutions.",
+    "service2_title": "Industrial Automation & Robotics",
+    "service2_desc": "Configuration of communication and industrial automation systems. Comprehensive services in computer science, telematics, and robotics.",
+    "service3_title": "IT & Business Consulting",
+    "service3_desc": "We offer professional consulting in information technology, financial advisory, and comprehensive business administration.",
+    "service4_title": "Trade & Project Management",
+    "service4_desc": "Import/export trading of electronic systems and control devices. Professional support for organizing events and conferences."
+  },
+  "About": {
+    "title": "About Us",
+    "headline": "Our Mission: Your Strategic Partner in Technology",
+    "text": "Sail-ICT was founded with the objective of providing innovative and reliable technological solutions. From strategic consulting to the implementation of complex projects, we are dedicated to helping our clients achieve their goals. We act as your partner, contracting the best expertise to guarantee your success."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "form_name": "Name",
+    "form_email": "E-Mail",
+    "form_message": "Message",
+    "form_cta": "Send"
+  },
+  "Footer": {
+    "copyright": "© 2025 Sail-ICT. All rights reserved."
+  }
+}

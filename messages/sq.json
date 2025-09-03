@@ -1,0 +1,41 @@
+{
+  "Navbar": {
+    "home": "Kryefaqja",
+    "services": "Shërbimet",
+    "about": "Rreth Nesh",
+    "contact": "Kontakt",
+    "cta": "Na Kontaktoni"
+  },
+  "Hero": {
+    "tagline": "NAVIGATING INNOVATION, ENGINEERING THE FUTURE",
+    "headline": "Inovacion i Lundrimit, Inxhinieri e së Ardhmes",
+    "subheading": "Ne specializohemi në krijimin e zgjidhjeve softuerike të avancuara, sistemeve të plota IT dhe automatizimit industrial për të fuqizuar biznesin tuaj.",
+    "cta": "Zbulo Më Shumë"
+  },
+  "Services": {
+    "title": "Shërbimet Tona",
+    "service1_title": "Zhvillim Software & Sisteme IT",
+    "service1_desc": "Konceptim, krijim dhe zbatim i aplikacioneve softuerike, platformave dhe sistemeve të plota IT, duke përfshirë zgjidhje të bazuara në inteligjencën artificiale.",
+    "service2_title": "Automatizim Industrial & Robotikë",
+    "service2_desc": "Konfigurimi i sistemeve të komunikimit dhe automatizimit industrial. Shërbime të plota në shkencat kompjuterike, telematike dhe robotikë.",
+    "service3_title": "Këshillim IT & Biznesi",
+    "service3_desc": "Ofrojmë konsulencë profesionale në fushën e teknologjisë së informacionit, konsulencë financiare dhe administrim të plotë biznesi.",
+    "service4_title": "Tregtim & Menaxhim Projektesh",
+    "service4_desc": "Tregtim import/eksport i sistemeve elektronike dhe pajisjeve të kontrollit. Mbështetje profesionale për organizimin e eventeve dhe konferencave."
+  },
+  "About": {
+    "title": "Rreth Nesh",
+    "headline": "Misioni Ynë: Partneri Juaj Strategjik në Teknologji",
+    "text": "Sail-ICT është themeluar me objektivin për të ofruar zgjidhje teknologjike inovative dhe të besueshme. Nga konsulenca strategjike deri te zbatimi i projekteve komplekse, ne jemi të përkushtuar të ndihmojmë klientët tanë të arrijnë objektivat e tyre. Ne veprojmë si partneri juaj, duke kontraktuar ekspertizën më të mirë për të garantuar suksesin tuaj."
+  },
+  "Contact": {
+    "title": "Na Kontaktoni",
+    "form_name": "Emri",
+    "form_email": "E-Mail",
+    "form_message": "Mesazhi",
+    "form_cta": "Dërgo"
+  },
+  "Footer": {
+    "copyright": "© 2025 Sail-ICT. Të gjitha të drejtat të rezervuara."
+  }
+}

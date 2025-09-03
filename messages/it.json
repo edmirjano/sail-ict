@@ -1,0 +1,41 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "services": "Servizi",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "cta": "Contattaci"
+  },
+  "Hero": {
+    "tagline": "NAVIGARE L'INNOVAZIONE, INGEGNERIZZARE IL FUTURO",
+    "headline": "Navigare l'Innovazione, Ingegnerizzare il Futuro",
+    "subheading": "Siamo specializzati nella creazione di soluzioni software avanzate, sistemi IT completi e automazione industriale per potenziare il tuo business.",
+    "cta": "Scopri di Più"
+  },
+  "Services": {
+    "title": "I Nostri Servizi",
+    "service1_title": "Sviluppo Software e Sistemi IT",
+    "service1_desc": "Ideazione, creazione e implementazione di applicazioni software, piattaforme e sistemi IT completi, incluse soluzioni basate sull'intelligenza artificiale.",
+    "service2_title": "Automazione Industriale e Robotica",
+    "service2_desc": "Configurazione di sistemi di comunicazione e automazione industriale. Servizi completi in informatica, telematica e robotica.",
+    "service3_title": "Consulenza IT e Aziendale",
+    "service3_desc": "Offriamo consulenza professionale nel campo della tecnologia dell'informazione, consulenza finanziaria e amministrazione aziendale completa.",
+    "service4_title": "Commercio e Gestione Progetti",
+    "service4_desc": "Commercio di import/export di sistemi elettronici e dispositivi di controllo. Supporto professionale per l'organizzazione di eventi e conferenze."
+  },
+  "About": {
+    "title": "Chi Siamo",
+    "headline": "La Nostra Missione: Il Tuo Partner Strategico nella Tecnologia",
+    "text": "Sail-ICT è stata fondata con l'obiettivo di fornire soluzioni tecnologiche innovative e affidabili. Dalla consulenza strategica all'implementazione di progetti complessi, ci dedichiamo ad aiutare i nostri clienti a raggiungere i loro obiettivi. Agiamo come il vostro partner, ingaggiando le migliori competenze per garantire il vostro successo."
+  },
+  "Contact": {
+    "title": "Contattaci",
+    "form_name": "Nome",
+    "form_email": "E-Mail",
+    "form_message": "Messaggio",
+    "form_cta": "Invia"
+  },
+  "Footer": {
+    "copyright": "© 2025 Sail-ICT. Tutti i diritti riservati."
+  }
+}
