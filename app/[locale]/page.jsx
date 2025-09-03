@@ -1,4 +1,6 @@
-import { getTranslations } from 'next-intl/server';
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { 
   Code2, 
   Factory, 
@@ -10,6 +12,10 @@ import {
 } from 'lucide-react';
 import MobileNav from '../../components/MobileNav';
 import ContactForm from '../../components/ContactForm';
+import LanguageSwitcher from '../../components/LanguageSwitcher';
+import CookieConsent from '../../components/CookieConsent';
+import LegalModal from '../../components/LegalModal';
+import useLegalModal from '../../hooks/useLegalModal';
 
 // Desktop Navigation Component
 function DesktopNav({ translations }) {
@@ -37,8 +43,9 @@ function DesktopNav({ translations }) {
   );
 }
 
-export default async function HomePage() {
-  const t = await getTranslations();
+export default function HomePage() {
+  const t = useTranslations();
+  const { isOpen, modalType, closeModal, openTerms, openPrivacy, openCookies } = useLegalModal();
 
   const navbarTranslations = {
     home: t('Navbar.home'),
@@ -64,7 +71,10 @@ export default async function HomePage() {
               </div>
             </div>
             
-            <DesktopNav translations={navbarTranslations} />
+            <div className="flex items-center space-x-4">
+              <DesktopNav translations={navbarTranslations} />
+              <LanguageSwitcher />
+            </div>
             <MobileNav translations={navbarTranslations} />
           </div>
         </div>
@@ -73,12 +83,23 @@ export default async function HomePage() {
       {/* Hero Section */}
       <section id="home" className="pt-24 pb-16 relative overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url(https://placehold.co/1920x1080/1f2937/ffffff?text=Technology+Background)',
-          }}
+          className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-800"
         >
-          <div className="absolute inset-0 bg-black/60"></div>
+          {/* Technology Background Pattern */}
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 left-0 w-full h-full" 
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%234f46e5' fill-opacity='0.4'%3E%3Ccircle cx='7' cy='7' r='2'/%3E%3Ccircle cx='53' cy='7' r='2'/%3E%3Ccircle cx='7' cy='53' r='2'/%3E%3Ccircle cx='53' cy='53' r='2'/%3E%3Cpath d='M30 7h-3v46h3zM7 30v-3h46v3z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+                backgroundSize: '60px 60px'
+              }}
+            ></div>
+            {/* Floating geometric shapes */}
+            <div className="absolute top-20 left-10 w-4 h-4 bg-blue-400 rotate-45 animate-pulse"></div>
+            <div className="absolute top-40 right-20 w-6 h-6 bg-purple-400 rounded-full animate-bounce"></div>
+            <div className="absolute bottom-20 left-20 w-5 h-5 bg-green-400 rotate-12 animate-pulse"></div>
+            <div className="absolute bottom-40 right-10 w-8 h-8 border-2 border-cyan-400 rotate-45 animate-spin" style={{animationDuration: '8s'}}></div>
+          </div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -184,7 +205,7 @@ export default async function HomePage() {
                 <div className="w-full h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
                   <div className="text-center text-white">
                     <Globe className="w-24 h-24 mx-auto mb-4 opacity-80" />
-                    <p className="text-xl font-semibold">Innovation Hub</p>
+                    <p className="text-xl font-semibold">{t('Common.innovation_hub')}</p>
                   </div>
                 </div>
               </div>
@@ -210,7 +231,7 @@ export default async function HomePage() {
                       <Mail className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Email</h3>
+                      <h3 className="font-semibold text-gray-900">{t('Contact.email_label')}</h3>
                       <a href="mailto:ilirshinko@gmail.com" className="text-blue-600 hover:text-blue-800 transition-colors">
                         ilirshinko@gmail.com
                       </a>
@@ -222,7 +243,7 @@ export default async function HomePage() {
                       <Phone className="w-6 h-6 text-green-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Phone</h3>
+                      <h3 className="font-semibold text-gray-900">{t('Contact.phone_label')}</h3>
                       <a href="tel:+355672033918" className="text-blue-600 hover:text-blue-800 transition-colors">
                         +355 67 203 3918
                       </a>
@@ -234,7 +255,7 @@ export default async function HomePage() {
                       <MapPin className="w-6 h-6 text-purple-600" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Address</h3>
+                      <h3 className="font-semibold text-gray-900">{t('Contact.address_label')}</h3>
                       <p className="text-gray-600">Tirane, Tirane, Rruga Jorgji Kushi, Kompleksi Klensi, God.4, Kati 3, Ap.28</p>
                     </div>
                   </div>
@@ -251,7 +272,7 @@ export default async function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
@@ -268,7 +289,7 @@ export default async function HomePage() {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
+              <h4 className="font-semibold mb-4">{t('Common.quick_links')}</h4>
               <nav className="space-y-2">
                 <a href="#home" className="block text-gray-400 hover:text-white transition-colors">
                   {t('Navbar.home')}
@@ -286,7 +307,7 @@ export default async function HomePage() {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
+              <h4 className="font-semibold mb-4">{t('Navbar.contact')}</h4>
               <div className="space-y-2 text-gray-400">
                 <a href="mailto:ilirshinko@gmail.com" className="block text-gray-400 hover:text-white transition-colors">
                   ilirshinko@gmail.com
@@ -297,6 +318,30 @@ export default async function HomePage() {
                 <p>Tirane, Tirane, Rruga Jorgji Kushi, Kompleksi Klensi, God.4, Kati 3, Ap.28</p>
               </div>
             </div>
+            
+            <div>
+              <h4 className="font-semibold mb-4">Legal</h4>
+              <nav className="space-y-2">
+                <button 
+                  onClick={openTerms}
+                  className="block text-gray-400 hover:text-white transition-colors text-left"
+                >
+                  {t('Legal.terms_title')}
+                </button>
+                <button 
+                  onClick={openPrivacy}
+                  className="block text-gray-400 hover:text-white transition-colors text-left"
+                >
+                  {t('Legal.privacy_title')}
+                </button>
+                <button 
+                  onClick={openCookies}
+                  className="block text-gray-400 hover:text-white transition-colors text-left"
+                >
+                  {t('Legal.cookies_title')}
+                </button>
+              </nav>
+            </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
@@ -304,6 +349,16 @@ export default async function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* Cookie Consent Popup */}
+      <CookieConsent onOpenCookiePolicy={openCookies} />
+
+      {/* Legal Modals */}
+      <LegalModal 
+        isOpen={isOpen} 
+        onClose={closeModal} 
+        type={modalType} 
+      />
     </div>
   );
 }

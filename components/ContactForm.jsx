@@ -29,13 +29,24 @@ export default function ContactForm() {
     setSubmitStatus(null);
 
     try {
-      // Here you would typically send the data to your backend
-      // For now, we'll simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
+      // Create email subject and body
+      const subject = encodeURIComponent(`Contact from ${formData.name} - Sail-ICT`);
+      const body = encodeURIComponent(`Name: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message}
+
+---
+This message was sent from the Sail-ICT contact form.`);
+      
+      // Open native email client
+      const mailtoLink = `mailto:ilirshinko@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
       
       setSubmitStatus({
         success: true,
-        message: 'Thank you! Your message has been sent successfully. We will get back to you soon.'
+        message: t('success_message')
       });
       
       // Reset form
@@ -44,7 +55,7 @@ export default function ContactForm() {
     } catch (error) {
       setSubmitStatus({
         success: false,
-        message: 'Sorry, there was an error sending your message. Please try again.'
+        message: t('error_message')
       });
     } finally {
       setIsSubmitting(false);
@@ -107,7 +118,7 @@ export default function ContactForm() {
           disabled={isSubmitting}
           className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed"
         >
-          {isSubmitting ? 'Sending...' : t('form_cta')}
+          {isSubmitting ? t('sending') : t('form_cta')}
         </button>
         
         {submitStatus && (
