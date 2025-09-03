@@ -3,13 +3,32 @@ import React from 'react';
 const Logo = ({ className = "w-10 h-10", showText = false, textSize = "text-xl" }) => {
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
-      {/* Logo Symbol */}
-      <div className="relative flex-shrink-0">
+      {/* Logo Symbol - with explicit container boundaries */}
+      <div 
+        className="logo-container relative flex-shrink-0" 
+        style={{ 
+          width: 'inherit', 
+          height: 'inherit',
+          maxWidth: '100%',
+          maxHeight: '100%',
+          position: 'relative',
+          overflow: 'hidden'
+        }}
+      >
         {/* Main circular design */}
         <svg 
           viewBox="0 0 60 60" 
-          className="w-full h-full"
+          width="100%"
+          height="100%"
           fill="currentColor"
+          preserveAspectRatio="xMidYMid meet"
+          style={{
+            display: 'block',
+            maxWidth: '100%',
+            maxHeight: '100%',
+            position: 'relative',
+            overflow: 'visible'
+          }}
         >
           {/* Large circle background */}
           <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2"/>
@@ -32,12 +51,12 @@ const Logo = ({ className = "w-10 h-10", showText = false, textSize = "text-xl" 
           <path d="M30 58 L26 30 L34 30 Z" fill="currentColor"/>
           <path d="M2 30 L30 26 L30 34 Z" fill="currentColor"/>
           <path d="M58 30 L30 26 L30 34 Z" fill="currentColor"/>
+          
+          {/* Small dots above and on sides - moved inside SVG */}
+          <circle cx="30" cy="1" r="1" fill="currentColor"/>
+          <circle cx="1" cy="30" r="1" fill="currentColor"/>
+          <circle cx="59" cy="30" r="1" fill="currentColor"/>
         </svg>
-        
-        {/* Small dots above and on sides */}
-        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-current rounded-full"></div>
-        <div className="absolute left-1 top-1/2 transform -translate-y-1/2 w-1 h-1 bg-current rounded-full"></div>
-        <div className="absolute right-1 top-1/2 transform -translate-y-1/2 w-1 h-1 bg-current rounded-full"></div>
       </div>
       
       {/* Text if showText is true */}

@@ -102,10 +102,10 @@ export default function HomePage() {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto mt-10">
             {/* Hero Logo */}
             <div className="flex justify-center mb-8">
-              <Logo className="w-24 h-24 text-white" showText={true} textSize="text-3xl" />
+              <Logo className="w-24 h-24 text-white" showText={false} textSize="text-3xl" />
             </div>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 mt-6 leading-tight">
               {t('Hero.headline')}
@@ -206,10 +206,7 @@ export default function HomePage() {
               
               <div className="relative">
                 <div className="w-full h-80 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <Globe className="w-24 h-24 mx-auto mb-4 opacity-80" />
-                    <p className="text-xl font-semibold">{t('Common.innovation_hub')}</p>
-                  </div>
+                    <Logo className="w-24 h-24 text-white opacity-80" showText={false} textSize="text-3xl" />
                 </div>
               </div>
             </div>
