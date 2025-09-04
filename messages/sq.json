@@ -21,7 +21,9 @@
     "service3_title": "Këshillim IT & Biznesi",
     "service3_desc": "Ofrojmë konsulencë profesionale në fushën e teknologjisë së informacionit, konsulencë financiare dhe administrim të plotë biznesi.",
     "service4_title": "Tregtim & Menaxhim Projektesh",
-    "service4_desc": "Tregtim import/eksport i sistemeve elektronike dhe pajisjeve të kontrollit. Mbështetje profesionale për organizimin e eventeve dhe konferencave."
+    "service4_desc": "Tregtim import/eksport i sistemeve elektronike dhe pajisjeve të kontrollit. Mbështetje profesionale për organizimin e eventeve dhe konferencave.",
+    "service5_title": "Mbështetje Eventesh ICT & Trajnime",
+    "service5_desc": "Mbështetje teknike dhe menaxheriale në eventet ICT për trajnime dhe shpërndarje. Asistencë profesionale për aktivitete edukative dhe promocionale."
   },
   "About": {
     "title": "Rreth Nesh",
@@ -79,6 +81,7 @@
     "terms_services_item2": "Automatizim Industrial & Robotikë - Konfigurimi i sistemeve të komunikimit dhe automatizimit industrial. Shërbimet e plota në shkencat kompjuterike, telematike dhe robotikë.",
     "terms_services_item3": "Këshillim IT & Biznesi - Konsulencë profesionale në fushën e teknologjisë së informacionit, konsulencë financiare dhe administrim të plotë biznesi.",
     "terms_services_item4": "Tregtim & Menaxhim Projektesh - Tregtim import/eksport i sistemeve elektronike dhe pajisjeve të kontrollit. Mbështetje profesionale për organizimin e eventeve dhe konferencave.",
+    "terms_services_item5": "Mbështetje Eventesh ICT & Trajnime - Mbështetje teknike dhe menaxheriale në eventet ICT për trajnime dhe shpërndarje. Asistencë profesionale për aktivitete edukative dhe promocionale.",
     "terms_use_title": "3. Përdorimi i Shërbimeve",
     "terms_use_content": "Ju biem dakord të përdorni shërbimet tona vetëm për qëllime ligjore dhe në përputhësi me këta terma. Ju ndalohet përdorimi i shërbimit për të transmetuar, shpërndarë, ruajtur ose shkatrruar material që mund të përbëjë ose nxitë sjellje që do të konsiderohet veprim penal ose shkel ligjet ose rregulloret e zbatueshme.",
     "terms_liability_title": "4. Kufizimi i Përgjëgjsisë",

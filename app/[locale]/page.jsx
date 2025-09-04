@@ -6,6 +6,7 @@ import {
   Factory, 
   Briefcase, 
   Globe, 
+  Users,
   Mail, 
   Phone, 
   MapPin
@@ -130,7 +131,7 @@ export default function HomePage() {
             {t('Services.title')}
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
             {/* Service 1 */}
             <div className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow group">
               <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors">
@@ -180,6 +181,19 @@ export default function HomePage() {
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 {t('Services.service4_desc')}
+              </p>
+            </div>
+
+            {/* Service 5 */}
+            <div className="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-shadow group">
+              <div className="w-16 h-16 bg-teal-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-teal-200 transition-colors">
+                <Users className="w-8 h-8 text-teal-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                {t('Services.service5_title')}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {t('Services.service5_desc')}
               </p>
             </div>
           </div>

@@ -21,7 +21,9 @@
     "service3_title": "Consulenza IT e Aziendale",
     "service3_desc": "Offriamo consulenza professionale nel campo della tecnologia dell'informazione, consulenza finanziaria e amministrazione aziendale completa.",
     "service4_title": "Commercio e Gestione Progetti",
-    "service4_desc": "Commercio di import/export di sistemi elettronici e dispositivi di controllo. Supporto professionale per l'organizzazione di eventi e conferenze."
+    "service4_desc": "Commercio di import/export di sistemi elettronici e dispositivi di controllo. Supporto professionale per l'organizzazione di eventi e conferenze.",
+    "service5_title": "Supporto Eventi ICT e Formazione",
+    "service5_desc": "Supporto tecnico e gestionale negli eventi ICT per formazione e divulgazione. Assistenza professionale per attività educative e promozionali."
   },
   "About": {
     "title": "Chi Siamo",
@@ -79,6 +81,7 @@
     "terms_services_item2": "Automazione Industriale e Robotica - Configurazione di sistemi di comunicazione e automazione industriale. Servizi completi in informatica, telematica e robotica.",
     "terms_services_item3": "Consulenza IT e Aziendale - Consulenza professionale nel campo della tecnologia dell'informazione, consulenza finanziaria e amministrazione aziendale completa.",
     "terms_services_item4": "Commercio e Gestione Progetti - Commercio di import/export di sistemi elettronici e dispositivi di controllo. Supporto professionale per l'organizzazione di eventi e conferenze.",
+    "terms_services_item5": "Supporto Eventi ICT e Formazione - Supporto tecnico e gestionale negli eventi ICT per formazione e divulgazione. Assistenza professionale per attività educative e promozionali.",
     "terms_use_title": "3. Uso dei Servizi",
     "terms_use_content": "Accetti di utilizzare i nostri servizi solo per scopi legali e in conformità con questi termini. È vietato utilizzare il servizio per trasmettere, distribuire, memorizzare o distruggere materiale che potrebbe costituire o incoraggiare condotte considerate reato penale o violare leggi o regolamenti applicabili.",
     "terms_liability_title": "4. Limitazione di Responsabilità",

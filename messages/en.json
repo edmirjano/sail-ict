@@ -21,7 +21,9 @@
     "service3_title": "IT & Business Consulting",
     "service3_desc": "We offer professional consulting in information technology, financial advisory, and comprehensive business administration.",
     "service4_title": "Trade & Project Management",
-    "service4_desc": "Import/export trading of electronic systems and control devices. Professional support for organizing events and conferences."
+    "service4_desc": "Import/export trading of electronic systems and control devices. Professional support for organizing events and conferences.",
+    "service5_title": "ICT Events & Training Support",
+    "service5_desc": "Technical and management support in ICT events for training and dissemination. Professional assistance for educational and promotional activities."
   },
   "About": {
     "title": "About Us",
@@ -86,6 +88,7 @@
     "terms_services_item2": "Industrial Automation & Robotics - Configuration of communication and industrial automation systems. Comprehensive services in computer science, telematics, and robotics.",
     "terms_services_item3": "IT & Business Consulting - Professional consulting in information technology, financial advisory, and comprehensive business administration.",
     "terms_services_item4": "Trade & Project Management - Import/export trading of electronic systems and control devices. Professional support for organizing events and conferences.",
+    "terms_services_item5": "ICT Events & Training Support - Technical and management support in ICT events for training and dissemination. Professional assistance for educational and promotional activities.",
     "terms_use_title": "3. Use of Services",
     "terms_use_content": "You agree to use our services only for lawful purposes and in accordance with these terms. You are prohibited from using the service to transmit, distribute, store or destroy material that could constitute or encourage conduct that would be considered a criminal offense or violate any applicable laws or regulations.",
     "terms_liability_title": "4. Limitation of Liability",
