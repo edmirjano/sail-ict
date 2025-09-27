@@ -30,6 +30,12 @@ export default function MobileNav({ translations }) {
             <a href="#about" className="text-white hover:text-blue-400 transition-colors">
               {translations.about}
             </a>
+            <a href="#events" className="text-white hover:text-blue-400 transition-colors">
+              {translations.events}
+            </a>
+            <a href="#products" className="text-white hover:text-blue-400 transition-colors">
+              {translations.products}
+            </a>
             <a href="#contact" className="text-white hover:text-blue-400 transition-colors">
               {translations.contact}
             </a>
