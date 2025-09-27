@@ -9,7 +9,10 @@ import {
   Users,
   Mail, 
   Phone, 
-  MapPin
+  MapPin,
+  Calendar,
+  MapPin as LocationIcon,
+  ExternalLink
 } from 'lucide-react';
 import MobileNav from '../../components/MobileNav';
 import ContactForm from '../../components/ContactForm';
@@ -32,6 +35,12 @@ function DesktopNav({ translations }) {
       <a href="#about" className="text-white hover:text-blue-400 transition-colors">
         {translations.about}
       </a>
+      <a href="#events" className="text-white hover:text-blue-400 transition-colors">
+        {translations.events}
+      </a>
+      <a href="#products" className="text-white hover:text-blue-400 transition-colors">
+        {translations.products}
+      </a>
       <a href="#contact" className="text-white hover:text-blue-400 transition-colors">
         {translations.contact}
       </a>
@@ -53,6 +62,8 @@ export default function HomePage() {
     home: t('Navbar.home'),
     services: t('Navbar.services'),
     about: t('Navbar.about'),
+    events: t('Events.title'),
+    products: t('Products.title'),
     contact: t('Navbar.contact'),
     cta: t('Navbar.cta')
   };
@@ -228,6 +239,245 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Events Section */}
+      <section id="events" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+              {t('Events.title')}
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-16">
+              {t('Events.subtitle')}
+            </p>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* IEEE SoSE 2025 */}
+              <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <Calendar className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {t('Events.ieee_sose_title')}
+                    </h3>
+                    <div className="flex items-center text-gray-600 mt-1">
+                      <LocationIcon className="w-4 h-4 mr-1" />
+                      <span className="text-sm">Tirana, Albania</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  {t('Events.ieee_sose_desc')}
+                </p>
+                <a 
+                  href="https://sosengineering.org/2025/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  {t('Events.conference_website')}
+                  <ExternalLink className="w-4 h-4 ml-1" />
+                </a>
+              </div>
+
+              {/* IEEE SmartAgri & SuSY 2025 */}
+              <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                    <Calendar className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">
+                      {t('Events.ieee_smartagri_title')}
+                    </h3>
+                    <div className="flex items-center text-gray-600 mt-1">
+                      <LocationIcon className="w-4 h-4 mr-1" />
+                      <span className="text-sm">Marrakesh, Morocco</span>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  {t('Events.ieee_smartagri_desc')}
+                </p>
+                <a 
+                  href="https://sysengineering.eu" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  {t('Events.event_website')}
+                  <ExternalLink className="w-4 h-4 ml-1" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section id="products" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+              {t('Products.title')}
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-16">
+              {t('Products.subtitle')}
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Product 1 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                  <Factory className="w-6 h-6 text-red-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product1_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product1_desc')}
+                </p>
+              </div>
+
+              {/* Product 2 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Briefcase className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product2_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product2_desc')}
+                </p>
+              </div>
+
+              {/* Product 3 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                  <Globe className="w-6 h-6 text-purple-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product3_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product3_desc')}
+                </p>
+              </div>
+
+              {/* Product 4 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-orange-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product4_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product4_desc')}
+                </p>
+              </div>
+
+              {/* Product 5 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+                  <Code2 className="w-6 h-6 text-teal-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product5_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product5_desc')}
+                </p>
+              </div>
+
+              {/* Product 6 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product6_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product6_desc')}
+                </p>
+              </div>
+
+              {/* Product 7 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                  <Code2 className="w-6 h-6 text-pink-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product7_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product7_desc')}
+                </p>
+              </div>
+
+              {/* Product 8 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                  <Briefcase className="w-6 h-6 text-indigo-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product8_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product8_desc')}
+                </p>
+              </div>
+
+              {/* Product 9 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                  <Globe className="w-6 h-6 text-yellow-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product9_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product9_desc')}
+                </p>
+              </div>
+
+              {/* Product 10 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-4">
+                  <Briefcase className="w-6 h-6 text-cyan-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {t('Products.product10_title')}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {t('Products.product10_desc')}
+                </p>
+              </div>
+
+              {/* Product 11 */}
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow md:col-span-2 lg:col-span-3">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <Globe className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      {t('Products.product11_title')}
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {t('Products.product11_desc')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -311,6 +561,12 @@ export default function HomePage() {
                 </a>
                 <a href="#about" className="block text-gray-400 hover:text-white transition-colors">
                   {t('Navbar.about')}
+                </a>
+                <a href="#events" className="block text-gray-400 hover:text-white transition-colors">
+                  {t('Events.title')}
+                </a>
+                <a href="#products" className="block text-gray-400 hover:text-white transition-colors">
+                  {t('Products.title')}
                 </a>
                 <a href="#contact" className="block text-gray-400 hover:text-white transition-colors">
                   {t('Navbar.contact')}
