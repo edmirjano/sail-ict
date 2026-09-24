@@ -7,7 +7,7 @@ import useLocalePath from '../hooks/useLocalePath';
 
 export default function Footer({ onOpenTerms, onOpenPrivacy, onOpenCookies }) {
   const t = useTranslations();
-  const { section } = useLocalePath();
+  const { section, page } = useLocalePath();
 
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -43,6 +43,9 @@ export default function Footer({ onOpenTerms, onOpenPrivacy, onOpenCookies }) {
               </a>
               <a href={section('products')} className="block text-gray-400 hover:text-white transition-colors">
                 {t('Products.title')}
+              </a>
+              <a href={page('projects')} className="block text-gray-400 hover:text-white transition-colors">
+                {t('Navbar.projects')}
               </a>
               <a href={section('contact')} className="block text-gray-400 hover:text-white transition-colors">
                 {t('Navbar.contact')}
