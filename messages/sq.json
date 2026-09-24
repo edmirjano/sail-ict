@@ -3,6 +3,7 @@
     "home": "Kryefaqja",
     "services": "Shërbimet",
     "about": "Rreth Nesh",
+    "projects": "Projektet",
     "contact": "Kontakt",
     "cta": "Na Kontaktoni"
   },
@@ -66,6 +67,39 @@
     "product11_title": "Sistemi i Ankimit dhe Vlerësimit Naval",
     "product11_desc": "Zgjidhja më e avancuar e portofolit, e projektuar për kompanitë e inspektimit dhe vlerësimit detar. Përfshin module për menaxhimin e udhëtimeve, faturimin aktiv dhe pasiv, menaxhimin e shumë monedhave, gjurmimin e shpenzimeve, orët e punës dhe parashikimet e përfitueshmërisë. Me integrimin Excel dhe aksesin e të dhënave të bazuar në role, ofron mbështetje të plotë për operacione komplekse dhe ndërkombëtare."
   },
+  "Projects": {
+    "title": "Projektet",
+    "subtitle": "Inovacion për bujqësinë shqiptare",
+    "back_home": "Kthehu te kryefaqja",
+    "dragonfly_title": "Dragonfly-Agri – Monitorimi i Ullishtave me Dronë Biomimetikë",
+    "dragonfly_location": "Vlorë & Berat, Shqipëri",
+    "dragonfly_duration": "9 muaj",
+    "dragonfly_teaser": "Dronë biomimetikë, të frymëzuar nga fluturimi i pilivesës, që monitorojnë shëndetin e ullishtave dhe sinjalizojnë në hartë pemët me probleme, që fermerët të ndërhyjnë në kohë.",
+    "read_more": "Lexo më shumë",
+    "dragonfly_intro1": "Sail ICT po zbaton projektin Dragonfly-Agri, një zgjidhje inovative që sjell teknologjinë e dronëve biomimetikë në shërbim të ullishtave shqiptare. I frymëzuar nga fluturimi i pilivesës, droni ynë është i lehtë, i qëndrueshëm dhe i përshtatshëm për të fluturuar mes pemëve, duke mbledhur të dhëna të sakta për shëndetin e ullishtës pa dëmtuar kulturën.",
+    "dragonfly_intro2": "Me anë të kamerave multispektrale dhe softuerit të analizës në cloud, Dragonfly-Agri identifikon herët pemët me probleme (stres hidrik, sëmundje apo mungesë lëndësh ushqyese) dhe u ofron fermerëve raporte të qarta, me pemët e sinjalizuara drejtpërdrejt në hartë. Kështu, fermerët mund të ndërhyjnë në kohë, të kursejnë ujë, plehra dhe pesticide, dhe të rrisin cilësinë e prodhimit.",
+    "features_title": "Si funksionon",
+    "feature1_title": "Kamera multispektrale",
+    "feature1_desc": "Droni mbledh imazhe multispektrale mes pemëve, të cilat analizohen nga softueri ynë në cloud.",
+    "feature2_title": "Identifikim i hershëm",
+    "feature2_desc": "Pemët me stres hidrik, sëmundje apo mungesë lëndësh ushqyese identifikohen herët.",
+    "feature3_title": "Raporte në hartë",
+    "feature3_desc": "Fermerët marrin raporte të qarta, me pemët e sinjalizuara drejtpërdrejt në hartë.",
+    "phases_title": "Fazat e projektit",
+    "phase_label": "Faza",
+    "phase1_title": "Platforma dhe testet e para",
+    "phase1_desc": "Ndërtojmë dhe konfigurojmë platformën UAV, zhvillojmë workflow-in e imazherisë dhe kryejmë testimet e para në ullishta reale në Vlorë dhe Berat.",
+    "phase2_title": "Validimi me ferma pilot",
+    "phase2_desc": "Shërbimi validohet me 3–5 ferma pilot, me mbështetjen e një eksperti agronom, duke vlerësuar edhe kushtet reale të punës si era, terreni dhe autonomia e baterive.",
+    "phase3_title": "Klientët e parë dhe lansimi",
+    "phase3_desc": "Fermat pilot kthehen në klientë të parë, lansohet marka tregtare Dragonfly-Agri dhe rezultatet prezantohen publikisht përmes demonstrimeve në fushë dhe një eventi përmbyllës.",
+    "goal_title": "Qëllimi ynë",
+    "goal_text": "Me Dragonfly-Agri, Sail ICT synon të ndërtojë një shërbim të qëndrueshëm monitorimi për sektorin e ullirit në Shqipëri, duke e bërë bujqësinë precize të aksesueshme edhe për fermerët e vegjël dhe të mesëm.",
+    "supported_by": "Me mbështetjen e",
+    "startup_albania": "Agjencia Startup Albania",
+    "ministry": "Ministria e Ekonomisë dhe Inovacionit",
+    "support_text": "Projekti Dragonfly-Agri zbatohet me mbështetjen e Agjencisë Startup Albania, pranë Ministrisë së Ekonomisë dhe Inovacionit."
+  },
   "Contact": {
     "title": "Na Kontaktoni",
     "form_name": "Emri",
@@ -84,7 +118,7 @@
     "innovation_hub": "Qendër Inovacioni"
   },
   "Footer": {
-    "copyright": "© 2025 Sail-ICT. Të gjitha të drejtat të rezervuara.",
+    "copyright": "© 2026 Sail-ICT. Të gjitha të drejtat të rezervuara.",
     "description": "Duke ofruar zgjidhje teknologjike inovative dhe të besueshme. Nga konsulenca strategjike deri te zbatimi i projekteve komplekse."
   },
   "Cookies": {

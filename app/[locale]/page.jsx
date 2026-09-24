@@ -12,84 +12,28 @@ import {
   MapPin,
   Calendar,
   MapPin as LocationIcon,
-  ExternalLink
+  ExternalLink,
+  Clock,
+  ArrowRight
 } from 'lucide-react';
-import MobileNav from '../../components/MobileNav';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import ContactForm from '../../components/ContactForm';
-import LanguageSwitcher from '../../components/LanguageSwitcher';
 import CookieConsent from '../../components/CookieConsent';
 import LegalModal from '../../components/LegalModal';
 import useLegalModal from '../../hooks/useLegalModal';
+import useLocalePath from '../../hooks/useLocalePath';
 import Logo from '../../components/Logo';
-
-// Desktop Navigation Component
-function DesktopNav({ translations }) {
-  return (
-    <nav className="hidden md:flex items-center space-x-8">
-      <a href="#home" className="text-white hover:text-blue-400 transition-colors">
-        {translations.home}
-      </a>
-      <a href="#services" className="text-white hover:text-blue-400 transition-colors">
-        {translations.services}
-      </a>
-      <a href="#about" className="text-white hover:text-blue-400 transition-colors">
-        {translations.about}
-      </a>
-      <a href="#events" className="text-white hover:text-blue-400 transition-colors">
-        {translations.events}
-      </a>
-      <a href="#products" className="text-white hover:text-blue-400 transition-colors">
-        {translations.products}
-      </a>
-      <a href="#contact" className="text-white hover:text-blue-400 transition-colors">
-        {translations.contact}
-      </a>
-      <a 
-        href="#contact" 
-        className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
-      >
-        {translations.cta}
-      </a>
-    </nav>
-  );
-}
 
 export default function HomePage() {
   const t = useTranslations();
+  const { page } = useLocalePath();
   const { isOpen, modalType, closeModal, openTerms, openPrivacy, openCookies } = useLegalModal();
-
-  const navbarTranslations = {
-    home: t('Navbar.home'),
-    services: t('Navbar.services'),
-    about: t('Navbar.about'),
-    events: t('Events.title'),
-    products: t('Products.title'),
-    contact: t('Navbar.contact'),
-    cta: t('Navbar.cta')
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-700">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <Logo className="w-10 h-10 text-white" />
-              <div>
-                <h1 className="text-xl font-bold text-white">Sail-ICT</h1>
-                <p className="text-xs text-blue-400 font-mono">{t('Hero.tagline')}</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-4">
-              <DesktopNav translations={navbarTranslations} />
-              <LanguageSwitcher />
-            </div>
-            <MobileNav translations={navbarTranslations} />
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section id="home" className="pt-24 pb-16 relative overflow-hidden">
@@ -478,6 +422,47 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Projects Section */}
+      <section id="projects" className="py-16 bg-green-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+              {t('Projects.title')}
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-16">
+              {t('Projects.subtitle')}
+            </p>
+
+            {/* Dragonfly-Agri */}
+            <div className="bg-white p-6 md:p-8 rounded-xl hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-900">
+                {t('Projects.dragonfly_title')}
+              </h3>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-gray-600 mt-2 mb-6">
+                <span className="flex items-center text-sm">
+                  <LocationIcon className="w-4 h-4 mr-1" />
+                  {t('Projects.dragonfly_location')}
+                </span>
+                <span className="flex items-center text-sm">
+                  <Clock className="w-4 h-4 mr-1" />
+                  {t('Projects.dragonfly_duration')}
+                </span>
+              </div>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                {t('Projects.dragonfly_teaser')}
+              </p>
+              <a
+                href={page('projects')}
+                className="flex sm:inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                {t('Projects.read_more')}
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -534,89 +519,11 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-3 mb-4">
-                <Logo className="w-10 h-10 text-white" />
-                <div>
-                  <h3 className="text-xl font-bold">Sail-ICT</h3>
-                  <p className="text-sm text-blue-400 font-mono">{t('Hero.tagline')}</p>
-                </div>
-              </div>
-              <p className="text-gray-400 max-w-md">
-                {t('Footer.description')}
-              </p>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">{t('Common.quick_links')}</h4>
-              <nav className="space-y-2">
-                <a href="#home" className="block text-gray-400 hover:text-white transition-colors">
-                  {t('Navbar.home')}
-                </a>
-                <a href="#services" className="block text-gray-400 hover:text-white transition-colors">
-                  {t('Navbar.services')}
-                </a>
-                <a href="#about" className="block text-gray-400 hover:text-white transition-colors">
-                  {t('Navbar.about')}
-                </a>
-                <a href="#events" className="block text-gray-400 hover:text-white transition-colors">
-                  {t('Events.title')}
-                </a>
-                <a href="#products" className="block text-gray-400 hover:text-white transition-colors">
-                  {t('Products.title')}
-                </a>
-                <a href="#contact" className="block text-gray-400 hover:text-white transition-colors">
-                  {t('Navbar.contact')}
-                </a>
-              </nav>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">{t('Navbar.contact')}</h4>
-              <div className="space-y-2 text-gray-400">
-                <a href="mailto:ilirshinko@gmail.com" className="block text-gray-400 hover:text-white transition-colors">
-                  ilirshinko@gmail.com
-                </a>
-                <a href="tel:+355672033918" className="block text-gray-400 hover:text-white transition-colors">
-                  +355 67 203 3918
-                </a>
-                <p>Tirane, Tirane, Rruga Jorgji Kushi, Kompleksi Klensi, God.4, Kati 3, Ap.28</p>
-              </div>
-            </div>
-            
-            <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <nav className="space-y-2">
-                <button 
-                  onClick={openTerms}
-                  className="block text-gray-400 hover:text-white transition-colors text-left"
-                >
-                  {t('Legal.terms_title')}
-                </button>
-                <button 
-                  onClick={openPrivacy}
-                  className="block text-gray-400 hover:text-white transition-colors text-left"
-                >
-                  {t('Legal.privacy_title')}
-                </button>
-                <button 
-                  onClick={openCookies}
-                  className="block text-gray-400 hover:text-white transition-colors text-left"
-                >
-                  {t('Legal.cookies_title')}
-                </button>
-              </nav>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">{t('Footer.copyright')}</p>
-          </div>
-        </div>
-      </footer>
+      <Footer 
+        onOpenTerms={openTerms} 
+        onOpenPrivacy={openPrivacy} 
+        onOpenCookies={openCookies} 
+      />
 
       {/* Cookie Consent Popup */}
       <CookieConsent onOpenCookiePolicy={openCookies} />

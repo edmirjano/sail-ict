@@ -20,7 +20,10 @@ export default function LanguageSwitcher() {
   const currentLanguage = languages.find(lang => lang.code === locale);
 
   const handleLanguageChange = (newLocale) => {
-    const currentPathname = pathname.split('/').slice(2).join('/'); // Remove locale from path
+    // Remove locale from path (English has no prefix, e.g. /projects)
+    const segments = pathname.split('/').filter(Boolean);
+    if (languages.some(lang => lang.code === segments[0])) segments.shift();
+    const currentPathname = segments.join('/');
     const newPath = `/${newLocale}${currentPathname ? `/${currentPathname}` : ''}`;
     router.push(newPath);
     setIsOpen(false);

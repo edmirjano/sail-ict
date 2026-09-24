@@ -3,6 +3,7 @@
     "home": "Home",
     "services": "Servizi",
     "about": "Chi Siamo",
+    "projects": "Progetti",
     "contact": "Contatti",
     "cta": "Contattaci"
   },
@@ -66,6 +67,39 @@
     "product11_title": "Sistema di Ispezione e Valutazione Navale",
     "product11_desc": "La soluzione più avanzata del portafoglio, progettata per aziende di ispezione e valutazione marittima. Include moduli per gestione viaggi, fatturazione attiva e passiva, gestione multi-valuta, tracciamento spese, timesheet e previsioni di redditività. Con integrazione Excel e accesso ai dati basato su ruoli, fornisce supporto completo per operazioni complesse e internazionali."
   },
+  "Projects": {
+    "title": "Progetti",
+    "subtitle": "Innovazione per l'agricoltura albanese",
+    "back_home": "Torna alla home",
+    "dragonfly_title": "Dragonfly-Agri – Monitoraggio degli Uliveti con Droni Biomimetici",
+    "dragonfly_location": "Valona e Berat, Albania",
+    "dragonfly_duration": "9 mesi",
+    "dragonfly_teaser": "Droni biomimetici, ispirati al volo della libellula, che monitorano la salute degli uliveti e segnalano sulla mappa gli alberi con problemi, così che gli agricoltori possano intervenire in tempo.",
+    "read_more": "Leggi di più",
+    "dragonfly_intro1": "Sail ICT sta realizzando il progetto Dragonfly-Agri, una soluzione innovativa che mette la tecnologia dei droni biomimetici al servizio degli uliveti albanesi. Ispirato al volo della libellula, il nostro drone è leggero, stabile e adatto a volare tra gli alberi, raccogliendo dati precisi sulla salute dell'uliveto senza danneggiare la coltura.",
+    "dragonfly_intro2": "Grazie a telecamere multispettrali e a un software di analisi in cloud, Dragonfly-Agri individua precocemente gli alberi con problemi (stress idrico, malattie o carenze nutritive) e fornisce agli agricoltori report chiari, con gli alberi segnalati direttamente sulla mappa. In questo modo gli agricoltori possono intervenire in tempo, risparmiare acqua, fertilizzanti e pesticidi, e migliorare la qualità della produzione.",
+    "features_title": "Come funziona",
+    "feature1_title": "Telecamere multispettrali",
+    "feature1_desc": "Il drone acquisisce immagini multispettrali tra gli alberi, analizzate dal nostro software in cloud.",
+    "feature2_title": "Rilevamento precoce",
+    "feature2_desc": "Gli alberi con stress idrico, malattie o carenze nutritive vengono individuati per tempo.",
+    "feature3_title": "Report su mappa",
+    "feature3_desc": "Gli agricoltori ricevono report chiari, con gli alberi segnalati direttamente sulla mappa.",
+    "phases_title": "Fasi del progetto",
+    "phase_label": "Fase",
+    "phase1_title": "Piattaforma e primi test",
+    "phase1_desc": "Costruiamo e configuriamo la piattaforma UAV, sviluppiamo il workflow di acquisizione delle immagini ed eseguiamo i primi test in uliveti reali a Valona e Berat.",
+    "phase2_title": "Validazione con aziende pilota",
+    "phase2_desc": "Il servizio viene validato con 3–5 aziende agricole pilota, con il supporto di un esperto agronomo, valutando anche le condizioni operative reali come vento, terreno e autonomia delle batterie.",
+    "phase3_title": "Primi clienti e lancio",
+    "phase3_desc": "Le aziende pilota diventano i primi clienti, viene lanciato il marchio Dragonfly-Agri e i risultati vengono presentati pubblicamente attraverso dimostrazioni sul campo e un evento conclusivo.",
+    "goal_title": "Il nostro obiettivo",
+    "goal_text": "Con Dragonfly-Agri, Sail ICT punta a costruire un servizio di monitoraggio sostenibile per il settore olivicolo in Albania, rendendo l'agricoltura di precisione accessibile anche ai piccoli e medi agricoltori.",
+    "supported_by": "Con il supporto di",
+    "startup_albania": "Agenzia Startup Albania",
+    "ministry": "Ministero dell'Economia e dell'Innovazione",
+    "support_text": "Il progetto Dragonfly-Agri è realizzato con il supporto dell'Agenzia Startup Albania, presso il Ministero dell'Economia e dell'Innovazione."
+  },
   "Contact": {
     "title": "Contattaci",
     "form_name": "Nome",
@@ -84,7 +118,7 @@
     "innovation_hub": "Hub dell'Innovazione"
   },
   "Footer": {
-    "copyright": "© 2025 Sail-ICT. Tutti i diritti riservati.",
+    "copyright": "© 2026 Sail-ICT. Tutti i diritti riservati.",
     "description": "Forniamo soluzioni tecnologiche innovative e affidabili. Dalla consulenza strategica all'implementazione di progetti complessi."
   },
   "Cookies": {

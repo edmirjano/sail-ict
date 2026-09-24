@@ -3,6 +3,7 @@
     "home": "Home",
     "services": "Services",
     "about": "About Us",
+    "projects": "Projects",
     "contact": "Contact",
     "cta": "Contact Us"
   },
@@ -66,6 +67,39 @@
     "product11_title": "Naval Survey and Valuation System",
     "product11_desc": "The most advanced solution in the portfolio, designed for maritime inspection and valuation companies. It includes modules for travel management, active and passive invoicing, multi-currency handling, expense tracking, timesheets, and profitability forecasting. With Excel integration and role-based data access, it provides complete support for complex and international operations."
   },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Innovation for Albanian agriculture",
+    "back_home": "Back to home",
+    "dragonfly_title": "Dragonfly-Agri – Olive Grove Monitoring with Biomimetic Drones",
+    "dragonfly_location": "Vlorë & Berat, Albania",
+    "dragonfly_duration": "9 months",
+    "dragonfly_teaser": "Biomimetic drones, inspired by the flight of the dragonfly, that monitor the health of olive groves and flag problem trees on a map, so farmers can act in time.",
+    "read_more": "Read more",
+    "dragonfly_intro1": "Sail ICT is implementing Dragonfly-Agri, an innovative solution that brings biomimetic drone technology to the service of Albanian olive groves. Inspired by the flight of the dragonfly, our drone is lightweight, stable and well suited to flying between trees, collecting accurate data on the health of the olive grove without damaging the crop.",
+    "dragonfly_intro2": "Using multispectral cameras and cloud-based analysis software, Dragonfly-Agri detects trees with problems early (water stress, disease or nutrient deficiency) and provides farmers with clear reports, with the flagged trees marked directly on a map. This way, farmers can act in time, save water, fertilisers and pesticides, and improve the quality of their production.",
+    "features_title": "How it works",
+    "feature1_title": "Multispectral cameras",
+    "feature1_desc": "The drone captures multispectral imagery between the trees, analysed by our cloud software.",
+    "feature2_title": "Early detection",
+    "feature2_desc": "Trees suffering from water stress, disease or nutrient deficiency are identified early.",
+    "feature3_title": "Map-based reports",
+    "feature3_desc": "Farmers receive clear reports, with the flagged trees marked directly on the map.",
+    "phases_title": "Project phases",
+    "phase_label": "Phase",
+    "phase1_title": "Platform and first tests",
+    "phase1_desc": "We build and configure the UAV platform, develop the imaging workflow and carry out the first tests in real olive groves in Vlorë and Berat.",
+    "phase2_title": "Validation with pilot farms",
+    "phase2_desc": "The service is validated with 3–5 pilot farms, supported by an agronomy expert, also assessing real working conditions such as wind, terrain and battery autonomy.",
+    "phase3_title": "First clients and launch",
+    "phase3_desc": "The pilot farms become the first clients, the Dragonfly-Agri brand is launched, and the results are presented publicly through field demonstrations and a closing event.",
+    "goal_title": "Our goal",
+    "goal_text": "With Dragonfly-Agri, Sail ICT aims to build a sustainable monitoring service for the olive sector in Albania, making precision agriculture accessible to small and medium-sized farmers as well.",
+    "supported_by": "Supported by",
+    "startup_albania": "Startup Albania Agency",
+    "ministry": "Ministry of Economy and Innovation",
+    "support_text": "The Dragonfly-Agri project is implemented with the support of the Startup Albania Agency, under the Ministry of Economy and Innovation."
+  },
   "Contact": {
     "title": "Contact Us",
     "form_name": "Name",
@@ -91,7 +125,7 @@
     "innovation_hub": "Innovation Hub"
   },
   "Footer": {
-    "copyright": "© 2025 Sail-ICT. All rights reserved.",
+    "copyright": "© 2026 Sail-ICT. All rights reserved.",
     "description": "Providing innovative and reliable technological solutions. From strategic consulting to complex project implementation."
   },
   "Cookies": {
