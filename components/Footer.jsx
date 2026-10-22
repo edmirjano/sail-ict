@@ -136,6 +136,9 @@ export default function Footer({ onOpenTerms, onOpenPrivacy, onOpenCookies }) {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400">{t('Footer.copyright')}</p>
+          <p className="text-xs text-gray-500 mt-2">
+            Website by <a href="https://square.al/" className="text-gray-400 hover:text-white transition-colors">Square</a>
+          </p>
         </div>
       </div>
     </footer>
